@@ -3,6 +3,7 @@
 Solutions of puzzles from [Advent of Code 2018](https://adventofcode.com/2018).
 
 ```
+_                                               _
       ) ))          ) )         ))         ____
    .-(-((-.     .--(-(-.     .-((---.     / _\ \
    '------'_    '------'_    '------'_   |/|  |/|
