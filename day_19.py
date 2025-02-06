@@ -90,11 +90,11 @@ def execute_eq(opcode, a, b, c, registers):
     """Execute an equality testing."""
     match opcode:
         case "eqir":
-            registers[c] = 1 if a == registers[b] else 0
+            registers[c] = int(a == registers[b])
         case "eqri":
-            registers[c] = 1 if registers[a] == b else 0
+            registers[c] = int(registers[a] == b)
         case "eqrr":
-            registers[c] = 1 if registers[a] == registers[b] else 0
+            registers[c] = int(registers[a] == registers[b])
 
     return registers
 
@@ -103,11 +103,11 @@ def execute_gt(opcode, a, b, c, registers):
     """Execute a greater-than testing."""
     match opcode:
         case "gtir":
-            registers[c] = 1 if a > registers[b] else 0
+            registers[c] = int(a > registers[b])
         case "gtri":
-            registers[c] = 1 if registers[a] > b else 0
+            registers[c] = int(registers[a] > b)
         case "gtrr":
-            registers[c] = 1 if registers[a] > registers[b] else 0
+            registers[c] = int(registers[a] > registers[b])
 
     return registers
 
